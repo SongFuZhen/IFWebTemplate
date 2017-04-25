@@ -1,36 +1,129 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-    <style type="text/css">
-        .backgroundImg img {
-            width: 100%;
-            height: 1540px;
-            position: absolute;
-            top: 0;
-            z-index: -1;
-        }
+﻿@{
+    ViewBag.Title = "登录";
+}
+<style type="text/css">
+    .backgroundImg img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
 
-        .login_content {
-            width: 1000px;
-            height: 800px;
-            box-shadow: 0px 0px 20px #000;
-            border-radius: 10px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -450px;
-            margin-top: -400px;
-        }
-    </style>
-</head>
-<body>
+    .login_content {
+        width: 550px;
+        height: 400px;
+        box-shadow: 0px 0px 20px #000;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -300px;
+        margin-top: -200px;
+    }
+    .login_header {
+        margin-top:50px;
+    }
+    .login_header img {
+        display: inline-block;
+        width: 54px;
+        height: 50px;
+        position: relative;
+        left: 50%;
+        margin-left: -86px;
+    }
+    .login_header span {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        top: 4px;
+        font-size:30px;
+        color:#fff;
+     }
+    .login_body {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+    .login_body input {
+         margin-top:10px;
+         border:none;
+         background:none;
+         outline:none;
+            
+    }
+    .login_pwd label {
+        margin-right:80px;
+    }
+    .login_name label {
+         margin-right:80px;
+    }
+    .login_pwd label img {
+        display:inline-block;
+        width:36px;
+        height:24px;
+        position:relative;
+    }
+    .login_name label img {
+        display:inline-block;
+        width:36px;
+        height:24px;
+        position:relative;
+    }
+    .login_name {
+        width:350px;
+        border-bottom:1px solid #999;
+    }
+    .login_pwd {
+        width:350px;
+        margin-top:20px;
+        border-bottom:1px solid #999;
+     }
+    .login_footer {
+        width:250px;
+        height:40px;
+     }
+    .login_footer button {
+        width:100%;
+        height:40px;
+        margin-left:150px;
+        background:#ffd92f;
+        border:1px solid #ffd92f;
+        border-radius:8px;
+        font-size:20px;
+        color:#6d634c;
+        cursor:pointer;
+    }
+</style>
+<form action="">
     <div class="backgroundImg">
         <img src="/Images/background.jpg" alt="背景图" />
         <div class="login_content">
-
+            <div class="login_header">
+                <img src="~/Images/logo_01.png" alt="logo" />
+                <span>佳轩实业</span>
+            </div>
+            <div class="login_body">
+                <div class="login_name">
+                    <label>
+                        <img src="~/Images/icon_02.png" alt="Alternate Text" />
+                    </label>
+                    <input placeholder="请输入账号" />
+                </div>
+                <div class="login_pwd">
+                    <label>
+                        <img src="~/Images/icon_01.png" alt="Alternate Text" />
+                    </label>
+                    <input placeholder="请输入账号" />
+                </div>
+            </div>
+            <div class="login_footer">
+                <button type="submit">登录</button>
+            </div>
         </div>
     </div>
-</body>
-</html>
+</form>
+
+
